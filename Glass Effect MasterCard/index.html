@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glass Morphism Credit Card | Aarush Mehta</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script>
+      var userName = prompt("Please enter your name:");
+
+      function setUserName() {
+        var usernameElement = document.getElementById("username");
+
+        if (userName) {
+          usernameElement.innerHTML = userName;
+        } else {
+          usernameElement.innerHTML = "Guest";
+        }
+      }
+    </script>
+  </head>
+  <body onload="setUserName()">
+    <div class="card">
+      <div class="top">
+        <div class="top-left">
+          <img src="/logo.png" alt="LOGO" />
+          <h2>MasterCard</h2>
+        </div>
+        <img src="/chip.png" alt="CHIP" class="chip" />
+      </div>
+      <div class="bottom">
+        <div class="card-num">
+          <h4>Card Number</h4>
+          <h1>1023 2234 5645 9209</h1>
+        </div>
+        <div class="details">
+          <h1 id="username">Swati Mayank Mehta</h1>
+          <div class="valid-till">
+            <h4>Valid Till</h4>
+            <h2>19/12/2029</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
